@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fullWidthRespectingMargins{
+        width: calc(100% - 3rem);
+}
+.triangle{
+    width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 0 solid transparent;
+	border-bottom: 40px solid #FFF;
+}
+@layer base {
+    h2 {
+        @apply text-3xl font-fraunces;
+    }
+    .upper-section-text{
+        @apply text-center mx-7 my-12 flex flex-col gap-6 text-lg;
+    }
+    .section-paragraph{
+        @apply text-gray;
+    }
+    .learn-more-container{
+        @apply flex flex-col items-center relative;
+    }
+    .learn-more-text{
+        @apply uppercase font-fraunces text-base tracking-wider;
+    }
+    .learn-more-underline{
+        @apply h-3 w-32 absolute bottom-0 -z-10 rounded-md;
+    }
+    .card{
+        @apply flex flex-col items-center mt-14 text-darkestBlue gap-7;
+    }
+    .avatar{
+        @apply rounded-full w-20;
+    }
+}
