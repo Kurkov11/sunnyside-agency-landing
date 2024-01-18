@@ -9,17 +9,22 @@ module.exports = {
         'test': '538px'
       },
       aspectRatio: {
-        'mobile-header-aspect': '100/143' //More or less the aspect ratio of header background
+        'mobile-header-aspect': '100/143', //More or less the aspect ratio of header background
+        'desktop-header-aspect': '2880/1600',
+        'mobile-menu-aspect': '100/130'
       },
       fontFamily: {
         'fraunces': 'Fraunces'
       },
       letterSpacing: {
         'mainHeadingSpacing': '0.2rem',
-        'testimonialsSpacing': '0.3rem'
+        'testimonialsSpacing': '0.3rem',
+        'widerThanWidest': '0.5rem'
       },
       fontSize: {
-        'mainHeadingSize': '2.7rem'
+        'mainHeadingSize': '2.7rem',
+        'desktopEggAndCupFontSize': '2.7rem',
+        'desktopMainHeadingSize': '3.5rem'
       },
       lineHeight: {
         'mainHeadingLineHeight': '1.1'
@@ -38,10 +43,20 @@ module.exports = {
         'photographyColor': 'hsl(198, 62%, 26%)',
         'darkestBlue': 'hsl(212, 27%, 19%)',
         'darkModerateCyan': 'hsl(168, 34%, 35%)',
-        'lightGreen': 'rgb(169, 215, 205)'
+        'lightGreen': 'rgb(169, 215, 205)',
+        'buttonHoverBlue': 'rgb(122, 209, 269)'
       },
       spacing: {
-        '40px': '40px'
+        '40px': '40px',
+        '360px': '360px',
+        '300px': '300px'
+      },
+      screens: {
+        'desktop': '1400px',
+        'mobile': '0px'
+      },
+      lineHeight: {
+        'desktopEggAndCupLeading': '3.3rem'
       }
     },
   },

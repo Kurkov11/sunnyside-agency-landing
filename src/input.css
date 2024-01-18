@@ -16,25 +16,31 @@
     h2 {
         @apply text-3xl font-fraunces;
     }
+    a {
+        @apply cursor-pointer;
+    }
     .upper-section-text{
-        @apply text-center mx-7 my-12 flex flex-col gap-6 text-lg;
+        @apply text-center mx-7 my-12 desktop:mx-32 flex flex-col gap-6 text-lg;
     }
     .section-paragraph{
         @apply text-gray;
     }
     .learn-more-container{
-        @apply flex flex-col items-center relative;
+        @apply flex flex-col items-center relative desktop:items-start;
     }
     .learn-more-text{
         @apply uppercase font-fraunces text-base tracking-wider;
     }
     .learn-more-underline{
-        @apply h-3 w-32 absolute bottom-0 -z-10 rounded-md;
+        @apply h-2 w-32 absolute bottom-0 -z-10 rounded-md;
     }
     .card{
-        @apply flex flex-col items-center mt-14 text-darkestBlue gap-7;
+        @apply flex flex-col items-center mt-14 text-darkestBlue gap-7 desktop:gap-16;
     }
     .avatar{
         @apply rounded-full w-20;
+    }
+    .contactButton{
+        @apply w-fit py-3.5 px-6 rounded-full hover:cursor-pointer;
     }
 }

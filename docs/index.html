@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-gradient-to-b from-cyan-500 to-blue-500">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -17,76 +17,95 @@
 </head>
 <body class="relative">
   <header>
-    <img src="../images/mobile/image-header.jpg" alt="orange on a blue background" class="absolute -z-50">
-    <div class="bg-header-mobile aspect-mobile-header-aspect w-full flex flex-col items-center p-6 relative">
+    <img src="../images/mobile/image-header.jpg" alt="orange on a blue background" class="absolute -z-50 desktop:hidden">
+    <img src="../images/desktop/image-header.jpg" alt="orange on a blue background" class="absolute -z-50 hidden desktop:block">
+    <div class="bg-header-mobile aspect-mobile-header-aspect desktop:aspect-desktop-header-aspect w-full flex flex-col items-center p-6 relative">
       <div class="triangle absolute top-16 mt-1 right-6 hidden" id="triangle"></div>
       <nav id="mobile-menu" class="bg-white py-10 fullWidthRespectingMargins absolute z-50 mx-20 mt-40px top-16 hidden">
         <ul class="text-center flex flex-col gap-7 items-center">
           <li class="text-gray"><a href="#">About</a></li>
           <li class="text-gray"><a href="#">Services</a></li>
           <li class="text-gray"><a href="#">Projects</a></li>
-          <div class="bg-yellow w-fit py-3 px-7 rounded-3xl">
+          <div class="bg-yellow contactButton">
             <li><a href="#" class="uppercase font-fraunces">Contact</a></li>
           </div>
         </ul>
       </nav>
       <div class="w-full flex justify-between">
-        <img src="../images/logo.svg" alt="sunnyside logo">
-        <img src="../images/icon-hamburger.svg" alt="hamburger menu" id="hamburger">
+        <img src="../images/logo.svg" alt="sunnyside logo" class="object-contain desktop:w-40">
+        <img src="../images/icon-hamburger.svg" alt="hamburger menu" id="hamburger" class="w-7 h-6 desktop:hidden">
+        <nav id="desktop-nav" class="hidden desktop:block">
+          <ul class="flex items-center gap-10 font-medium text-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <div class="contactButton bg-white text-darkestBlue hover:bg-buttonHoverBlue hover:text-white">
+              <li><a href="#" class="uppercase font-fraunces">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
-      <div class="flex flex-col items-center absolute bottom-headingAndArrowBottom">
-        <h1 class="uppercase text-white text-center pt-16 font-fraunces tracking-widest text-mainHeadingSize leading-mainHeadingLineHeight">We are creatives</h1>
-        <img src="../images/icon-arrow-down.svg" alt="arrow down" class="pt-12" id="arrow-down">
+      <div class="flex flex-col items-center absolute bottom-headingAndArrowBottom top-20">
+
+        <h1 
+        class="uppercase text-white text-center pt-16 font-fraunces tracking-widest desktop:tracking-widerThanWidest text-mainHeadingSize desktop:text-desktopMainHeadingSize leading-mainHeadingLineHeight" 
+        id="mainHeading">
+          We are creatives
+        </h1>
+
+        <img src="../images/icon-arrow-down.svg" alt="arrow down" class="pt-11 desktop:pt-36" id="arrow-down">
       </div>
     </div>
   </header>
-  <main>
-    <section>
-      <img src="../images/mobile/image-transform.jpg" alt="egg on yellow background">
-      <div class="upper-section-text">
-        <h2 class="font-fraunces">Transform your brand</h2>
+  <main class="desktop: grid desktop:grid-cols-2">
+    <section class="desktop:grid desktop:grid-cols-2 desktop:col-span-2">
+      <img src="../images/mobile/image-transform.jpg" alt="egg on yellow background" class="desktop:order-2">
+      <div class="upper-section-text desktop:flex desktop:flex-col desktop:justify-center desktop:text-left">
+        <h2 class="font-fraunces desktop:text-desktopEggAndCupFontSize desktop:leading-desktopEggAndCupLeading">Transform your brand</h2>
         <p class="section-paragraph">We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <div class="learn-more-container">
-          <a href="#" class="learn-more-text">Learn more</a>
-          <div class="learn-more-underline bg-lightYellow"></div>
+        <div class="learn-more-container" id="yellow-learn-more-container">
+          <a href="#" class="learn-more-text" id="yellow-learn-more-text">Learn more</a>
+          <div class="learn-more-underline bg-lightYellow" id="yellow-learn-more-underline"></div>
         </div>
       </div>
     </section>
-    <section>
+    <section class="desktop:grid desktop:grid-cols-2 desktop:col-span-2">
       <img src="../images/mobile/image-stand-out.jpg" alt="cup on pink background">
-      <div class="upper-section-text">
-        <h2 class="font-fraunces">Straight out to the right audience</h2>
+      <div class="upper-section-text desktop:flex desktop:flex-col desktop:justify-center desktop:text-left">
+        <h2 class="font-fraunces desktop:text-desktopEggAndCupFontSize desktop:leading-desktopEggAndCupLeading">Straight out to the right audience</h2>
         <p class="section-paragraph">  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
         </p>
-        <div class="learn-more-container">
-          <a href="#" class="learn-more-text">Learn more</a>
-          <div class="learn-more-underline bg-lightSoftRed"></div>
+        <div class="learn-more-container" id="red-learn-more-container">
+          <a href="#" class="learn-more-text" id="red-learn-more-text">Learn more</a>
+          <div class="learn-more-underline bg-lightSoftRed" id="red-learn-more-underline"></div>
         </div>
       </div>
     </section>
     <section class="relative">
-      <img src="../images/mobile/image-graphic-design.jpg" alt="cherries on a cyan background">
+      <img src="../images/mobile/image-graphic-design.jpg" alt="cherries on a cyan background" class="desktop:hidden">
+      <img src="../images/desktop/image-graphic-design.jpg" alt="cherries on a cyan background" class="hidden desktop:block">
       <div class="absolute w-full bottom-0 flex flex-col items-center text-graphicDesignColor px-7 py-12">
         <h2 class="pb-7">Graphic Design</h2>
-        <p class="text-center font-medium">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        <p class="text-center font-medium desktop:max-w-360px">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
       </div>
     </section>
     <section class="relative">
-      <img src="../images/mobile/image-photography.jpg" alt="cherries on a cyan background">
+      <img src="../images/mobile/image-photography.jpg" alt="orange on a blue background" class="desktop:hidden">
+      <img src="../images/desktop/image-photography.jpg" alt="orange on a blue background" class="hidden desktop:block">
       <div class="absolute w-full bottom-0 flex flex-col items-center text-photographyColor px-7 py-12">
         <h2 class="pb-7">Photography</h2>
-        <p class="text-center font-medium">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <p class="text-center font-medium desktop:max-w-360px">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </div>
     </section>
-    <section class="px-7 py-12">
-      <h3 class="text-center uppercase font-fraunces text-lightGray tracking-testimonialsSpacing text-sm">Client testimonials</h3>
-      <div class="grid grid-cols-1 text-center">
+    <section class="px-7 py-12 desktop:px-52 desktop:py-40 desktop:col-span-2">
+      <h3 class="text-center uppercase font-fraunces text-lightGray tracking-testimonialsSpacing text-sm desktop:text-lg">Client testimonials</h3>
+      <div class="grid grid-cols-1 desktop:grid-cols-3 gap-4 text-center desktop:mt-5">
         <div class="card">
           <img src="../images/image-emily.jpg" alt="avatar" class="avatar">
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
           <div>
-            <h4 class="mb-1 font-fraunces">Emily R.</h4>
+            <h4 class="mb-1 font-fraunces text-lg">Emily R.</h4>
             <p class="text-lightGray text-sm">Marketing Director</p>
           </div>
         </div>
@@ -95,8 +114,8 @@
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
           <div>
-            <h4 class="mb-1 font-fraunces">Thomas S.</h4>
-            <p>Chief Operating Officer</p>
+            <h4 class="mb-1 font-fraunces text-lg">Thomas S.</h4>
+            <p class="text-lightGray text-sm">Chief Operating Officer</p>
           </div>
         </div>
         <div class="card">
@@ -104,36 +123,61 @@
           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
           </p>
           <div>
-            <h4 class="mb-1 font-fraunces">Jennie F.</h4>
-            <p>Business Owner</p>
+            <h4 class="mb-1 font-fraunces text-lg">Jennie F.</h4>
+            <p class="text-lightGray text-sm">Business Owner</p>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="grid grid-cols-2">
-      <img src="../images/mobile/image-gallery-milkbottles.jpg" alt="">
-      <img src="../images/mobile/image-gallery-orange.jpg" alt="">
-      <img src="../images/mobile/image-gallery-cone.jpg" alt="">
-      <img src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    <div class="grid grid-cols-2 desktop:grid-cols-4">
+      <img src="../images/mobile/image-gallery-milkbottles.jpg" class="desktop:hidden" alt="bottles of milk">
+      <img src="../images/mobile/image-gallery-orange.jpg" class="desktop:hidden" alt="half of orange">
+      <img src="../images/mobile/image-gallery-cone.jpg" class="desktop:hidden" alt="ice cream cone">
+      <img src="../images/mobile/image-gallery-sugar-cubes.jpg" class="desktop:hidden" alt="sugar cubes">
+
+      <img src="../images/desktop/image-gallery-milkbottles.jpg" class="hidden desktop:block" alt="bottles of milk">
+      <img src="../images/desktop/image-gallery-orange.jpg" class="hidden desktop:block" alt="half of orange">
+      <img src="../images/desktop/image-gallery-cone.jpg" class="hidden desktop:block" alt="ice cream cone">
+      <img src="../images/desktop/image-gallery-sugarcubes.jpg" class="hidden desktop:block" alt="sugar cubes">
     </div>
     <div class="bg-lightGreen flex flex-col items-center pb-16">
-      <nav class="flex flex-col items-center py-16 gap-9 w-full">
+      <nav class="flex flex-col items-center py-16 gap-9 w-full max-w-300px">
         <img src="../images/logo-green.svg" alt="green sunnyside logo" class="object-contain w-40 font-bold">
         <div class="w-full">
-          <ul class="grid grid-cols-3 text-center text-darkModerateCyan">
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+          <ul class="grid grid-cols-3 text-center text-darkModerateCyan font-medium">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Services</a></li>
+            <li><a href="#" class="hover:text-white">Projects</a></li>
           </ul>
         </div>
       </nav>
       <div class="flex w-52 justify-center gap-7">
-        <img src="../images/icon-facebook.svg" alt="">
-        <img src="../images/icon-instagram.svg" alt="">
-        <img src="../images/icon-twitter.svg" alt="">
-        <img src="../images/icon-pinterest.svg" alt="">
+        <div id="facebook-container">
+          <a href="#">
+            <img src="../images/icon-facebook.svg" id="fa" alt="">
+            <img src="../images/icon-facebook-white.svg" alt="" id="fa-white" class="hidden">
+          </a>
+        </div>
+        <div id="instagram-container">
+          <a href="">
+            <img src="../images/icon-instagram.svg" alt="" id="in">
+            <img src="../images/icon-instagram-white.svg" alt="" id="in-white" class="hidden">
+          </a>
+        </div>
+        <div id="twitter-container">
+          <a href="">
+            <img src="../images/icon-twitter.svg" alt="" id="tw">
+            <img src="../images/icon-twitter-white.svg" alt="" id="tw-white" class="hidden">
+          </a>
+        </div>
+        <div id="pinterest-container">
+          <a href="">
+            <img src="../images/icon-pinterest.svg" alt="" id="pi">
+            <img src="../images/icon-pinterest-white.svg" alt="" id="pi-white" class="hidden">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
