@@ -44,7 +44,8 @@ module.exports = {
         'darkestBlue': 'hsl(212, 27%, 19%)',
         'darkModerateCyan': 'hsl(168, 34%, 35%)',
         'lightGreen': 'rgb(169, 215, 205)',
-        'buttonHoverBlue': 'rgb(122, 209, 269)'
+        'buttonHoverBlue': 'rgb(122, 209, 269)',
+        'socialGreen': '#2C7566'
       },
       spacing: {
         '40px': '40px',

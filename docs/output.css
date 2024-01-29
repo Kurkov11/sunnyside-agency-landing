@@ -808,6 +808,14 @@ a {
   background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
 }
 
+.fill-red-500 {
+  fill: #ef4444;
+}
+
+.fill-socialGreen {
+  fill: #2C7566;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -951,6 +959,10 @@ a {
 .hover\:bg-buttonHoverBlue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(122 209 269 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
 }
 
 .hover\:text-white:hover {

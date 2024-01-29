@@ -17,38 +17,6 @@ document.querySelector('#hamburger').onclick = function(){
     
 }
 
-document.querySelector('#facebook-container').onmouseover = function(){
-    document.querySelector('#fa').style.fill = 'white';
-}
-document.querySelector('#facebook-container').onmouseout = function(){
-    document.querySelector('#fa').style.fill = '#2C7566';
-}
-
-
-document.querySelector('#instagram-container').onmouseover = function(){
-    document.querySelector('#in').style.fill = 'white';
-}
-document.querySelector('#instagram-container').onmouseout = function(){
-    document.querySelector('#in').style.fill = '#2C7566';
-}
-
-
-document.querySelector('#twitter-container').onmouseover = function(){
-    document.querySelector('#tw').style.fill = 'white';
-}
-document.querySelector('#twitter-container').onmouseout = function(){
-    document.querySelector('#tw').style.fill = '#2C7566';
-}
-
-
-document.querySelector('#pinterest-container').onmouseover = function(){
-    document.querySelector('#pi').style.fill = 'white';
-}
-document.querySelector('#pinterest-container').onmouseout = function(){
-    document.querySelector('#pi').style.fill = '#2C7566';
-}
-
-
 document.querySelector('#yellow-learn-more-text').onmouseover = function(){
     document.querySelector('#yellow-learn-more-underline').style.height = "0.65rem";
     document.querySelector('#yellow-learn-more-underline').style.backgroundColor = 'hsl(51, 100%, 49%)';
