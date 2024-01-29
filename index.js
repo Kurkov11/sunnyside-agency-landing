@@ -26,32 +26,26 @@ document.querySelector('#facebook-container').onmouseout = function(){
 
 
 document.querySelector('#instagram-container').onmouseover = function(){
-    document.querySelector('#in-white').style.display = 'block';
-    document.querySelector('#in').style.display = 'none';
+    document.querySelector('#in').style.fill = 'white';
 }
 document.querySelector('#instagram-container').onmouseout = function(){
-    document.querySelector('#in-white').style.display = 'none';
-    document.querySelector('#in').style.display = 'block';
+    document.querySelector('#in').style.fill = '#2C7566';
 }
 
 
 document.querySelector('#twitter-container').onmouseover = function(){
-    document.querySelector('#tw-white').style.display = 'block';
-    document.querySelector('#tw').style.display = 'none';
+    document.querySelector('#tw').style.fill = 'white';
 }
 document.querySelector('#twitter-container').onmouseout = function(){
-    document.querySelector('#tw-white').style.display = 'none';
-    document.querySelector('#tw').style.display = 'block';
+    document.querySelector('#tw').style.fill = '#2C7566';
 }
 
 
 document.querySelector('#pinterest-container').onmouseover = function(){
-    document.querySelector('#pi-white').style.display = 'block';
-    document.querySelector('#pi').style.display = 'none';
+    document.querySelector('#pi').style.fill = 'white';
 }
 document.querySelector('#pinterest-container').onmouseout = function(){
-    document.querySelector('#pi-white').style.display = 'none';
-    document.querySelector('#pi').style.display = 'block';
+    document.querySelector('#pi').style.fill = '#2C7566';
 }
 
 
