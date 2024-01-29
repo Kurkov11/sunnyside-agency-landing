@@ -713,10 +713,6 @@ a {
   aspect-ratio: 100/143;
 }
 
-.aspect-mobile-menu-aspect {
-  aspect-ratio: 100/130;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -934,6 +930,12 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .fullWidthRespectingMargins{
   width: calc(100% - 3rem);
 }
@@ -957,10 +959,6 @@ a {
 }
 
 @media (min-width: 1400px) {
-  .desktop\:top-20 {
-    top: 5rem;
-  }
-
   .desktop\:order-2 {
     order: 2;
   }

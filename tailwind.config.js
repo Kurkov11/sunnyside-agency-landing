@@ -53,6 +53,7 @@ module.exports = {
       },
       screens: {
         'desktop': '1400px',
+        'tablet': '500px',
         'mobile': '0px'
       },
       lineHeight: {
