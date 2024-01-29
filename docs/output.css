@@ -808,10 +808,6 @@ a {
   background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
 }
 
-.fill-red-500 {
-  fill: #ef4444;
-}
-
 .fill-socialGreen {
   fill: #2C7566;
 }
