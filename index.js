@@ -18,12 +18,10 @@ document.querySelector('#hamburger').onclick = function(){
 }
 
 document.querySelector('#facebook-container').onmouseover = function(){
-    document.querySelector('#fa-white').style.display = 'block';
-    document.querySelector('#fa').style.display = 'none';
+    document.querySelector('#fa').style.fill = 'white';
 }
 document.querySelector('#facebook-container').onmouseout = function(){
-    document.querySelector('#fa-white').style.display = 'none';
-    document.querySelector('#fa').style.display = 'block';
+    document.querySelector('#fa').style.fill = '#2C7566';
 }
 
 
